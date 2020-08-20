@@ -1,0 +1,49 @@
+body {
+	border: dashed red 2px;
+	padding: 10px;
+}
+
+header {
+	border: dashed red 2px;
+	padding: 10px;
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+main {
+	border: dashed blue 2px;
+	height: 700px;
+	width: 80%;
+	margin: auto;
+	position: relative;
+}
+
+footer {
+	border: dashed red 2px;
+	padding: 10px;
+	margin: 10px;
+}
+aside {
+	border: dashed green 2px;
+	padding: 3px;
+	margin: 3px;
+	float: right;
+	width: 20%;
+}
+
+.logo-holder {
+	order: 0;
+	margin: 5px;
+}
+
+.author-name {
+	margin: 5px;
+}
+
+.bottom-row {
+	border: lightblue dashed 2px;
+	display: flex;
+	position: absolute;
+	bottom: 0;
+}
