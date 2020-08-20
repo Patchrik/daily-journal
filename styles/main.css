@@ -8,7 +8,8 @@ header {
 	padding: 10px;
 	margin: 10px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	flex-direction: column;
 }
 
 main {
@@ -16,8 +17,11 @@ main {
 	height: 700px;
 	width: 80%;
 	margin: auto;
-	position: flex;
+	display: flex;
 	padding: 7px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 }
 
 footer {
@@ -29,25 +33,27 @@ aside {
 	border: dashed green 2px;
 	padding: 3px;
 	margin: 3px;
-	float: right;
-	width: 20%;
 	height: 95%;
-	align-content: flex-end;
+	flex-basis: 25%;
+	align-self: flex-end;
 }
 
 .logo-holder {
 	order: 0;
 	margin: 5px;
+	align-self: flex-start;
 }
 
 .author-name {
 	margin: 5px;
+	align-self: center;
 }
 
-.bottom-row {
-	border: lightblue dashed 2px;
+.MainFieldContainer {
+	border: dashed 2px rebeccapurple;
+	align-self: flex-start;
+	height: 95%;
+	flex-basis: 75%;
 	display: flex;
-	position: absolute;
-	bottom: 0;
-	justify-content: center;
+	flex-direction: column;
 }
