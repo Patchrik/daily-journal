@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pat Stats</title>
+		<link rel="stylesheet" href="styles/main.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pat Stats</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
+	<body>
+		<header>
+			<div class="logo-holder">
+				<img src="/imgs/logo.png" alt="Logo, a red panda" />
+			</div>
+			<div class="author-name">
+				<h2>Author - Parker Kelley</h2>
+			</div>
+		</header>
 
-<body>
-    <header>
-        <div class="logo-holder">logo goes here</div>
-        <div class="author-name">Author - Parker Kelley</div>
-    </header>
+		<main>
+			<form action="">
+				<fieldset class="MainFieldContainer">
+					<label for="journalEntry">Journal Entry</label>
+					<textarea
+						name="journalEntry"
+						id="journalEntry"
+						cols="45"
+						rows="15"
+					></textarea>
 
-    <main>
-        placeholder for the area holding our journal entries
+					<div class="bottomOfTextAreaFlexWrapper">
+						<label for="journalDate">Date of entry</label>
+						<input type="date" name="journalDate" id="journalDate" />
+						<label for="journalConcepts">Concepts Covered</label>
+						<input type="text" name="journalConcepts" id="journalConcepts" />
+						<label for="journalMood">Mood</label>
+						<select name="journalMood" id="journalMood">
+							<option value="Sad">Sad</option>
+							<option value="Mad">Mad</option>
+							<option value="Stressed">Stressed</option>
+							<option value="Happy">Happy</option>
+							<option value="Excited">Excited</option>
+						</select>
+						<input type="button" value="Record Journal Entry" onclick="click" />
+					</div>
+				</fieldset>
+			</form>
 
-        <section class="bottom-row">
-            <div class="date-field-holder">
-                <input type="date" id="journal-date" name="journal-date">
-                <label for="journal-date">Journal Date</label>
-            </div>
-            <div class="input-field-concept">
-                <input type="text" id="journal-concept" name="journal-concept">
-                <label for="journal-concept">Concept</label>
-            </div>
-            <div class="input-field-mood">
-                <input type="text" id="journal-mood" name="journal-mood">
-                <label for="journal-mood">Mood</label>
-            </div>
-
-        </section>
-        <aside>
-            This will holder our previous journal entries
-        </aside>
-    </main>
-    <aside>
-        This will holder our previous journal entries
-    </aside>
-    <footer>
-        footer placeholder
-    </footer>
-</body>
-
+			<aside>
+				This will holder our previous journal entries
+				<ul>
+					<li>Lorem, ipsum dolor.</li>
+					<li>Lorem, ipsum dolor.</li>
+					<li>Lorem, ipsum dolor.</li>
+					<li>Lorem, ipsum dolor.</li>
+					<li>Lorem, ipsum dolor.</li>
+				</ul>
+			</aside>
+		</main>
+		<footer>
+			footer placeholder
+		</footer>
+	</body>
 </html>
