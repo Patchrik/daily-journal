@@ -16,7 +16,8 @@ main {
 	height: 700px;
 	width: 80%;
 	margin: auto;
-	position: relative;
+	position: flex;
+	padding: 7px;
 }
 
 footer {
@@ -30,6 +31,8 @@ aside {
 	margin: 3px;
 	float: right;
 	width: 20%;
+	height: 95%;
+	align-content: flex-end;
 }
 
 .logo-holder {
@@ -46,4 +49,5 @@ aside {
 	display: flex;
 	position: absolute;
 	bottom: 0;
+	justify-content: center;
 }
