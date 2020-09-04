@@ -7,6 +7,8 @@
  */
 
 // This is the original data.
+let journalFromAPI = [];
+
 const journal = [
 	{
 		id: 1,
@@ -45,3 +47,19 @@ export const useJournalEntries = () => {
 	);
 	return sortedByDate;
 };
+
+// Here we are going to create a getEntries function to get the entries off a local JSON server.
+
+export const getEntries = () => {
+	return fetch('http://localhost:8088/entries')
+		.then((Response) => Response.json())
+		.then((parsedEntries) => {
+			console.table(parsedEntries);
+			journalFromAPI = parsedEntries;
+		})
+		.then((_) => {
+			console.log('this should be an array of objects', journalFromAPI);
+		});
+};
+
+export const useEntries = () => journalFromAPI.slice();

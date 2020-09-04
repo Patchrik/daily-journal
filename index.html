@@ -10,10 +10,7 @@
 	<body>
 		<header>
 			<div class="logo-holder">
-				<img src="/imgs/logo.png" alt="Logo, a red panda" />
-			</div>
-			<div class="author-name">
-				<h2>Author - Parker Kelley</h2>
+				<img id="logo-img" src="/imgs/logo.png" alt="Logo, a red panda" />
 			</div>
 		</header>
 
@@ -28,7 +25,6 @@
 						cols="45"
 						rows="15"
 					></textarea>
-					<div id="entryLog"></div>
 					<div class="bottomOfTextAreaFlexWrapper">
 						<!-- This is the field for holding dates -->
 						<label for="journalDate">Date of entry</label>
@@ -52,14 +48,7 @@
 			</form>
 
 			<aside>
-				This will holder our previous journal entries
-				<ul>
-					<li>Lorem, ipsum dolor.</li>
-					<li>Lorem, ipsum dolor.</li>
-					<li>Lorem, ipsum dolor.</li>
-					<li>Lorem, ipsum dolor.</li>
-					<li>Lorem, ipsum dolor.</li>
-				</ul>
+				<ul class="ul--previousEntries"></ul>
 			</aside>
 		</main>
 		<footer>footer placeholder</footer>

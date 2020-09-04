@@ -4,10 +4,12 @@
  */
 export const JournalEntryComponent = (entry) => {
 	return `
-        <section id="entry--${entry.id}" class="journalEntry">
-            <h1>${entry.concept}</h1>
+        <li>
+        <div id="entry--${entry.id}" class="journalEntry">
+            <h4>${entry.concept}</h4>
             <p>${entry.entry}</p>
             <p>${entry.date}</p>
-        </section>
+        </div>
+        </li>
     `;
 };
