@@ -7,7 +7,7 @@
  */
 
 // This is the original data.
-const journalFromAPI = [];
+let journalFromAPI = [];
 
 const journal = [
 	{
@@ -54,7 +54,11 @@ export const getEntries = () => {
 	return fetch('http://localhost:8088/entries')
 		.then((Response) => Response.json())
 		.then((parsedEntries) => {
+			console.table(parsedEntries);
 			journalFromAPI = parsedEntries;
+		})
+		.then((_) => {
+			console.log('this should be an array of objects', journalFromAPI);
 		});
 };
 
