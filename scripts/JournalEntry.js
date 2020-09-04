@@ -6,7 +6,7 @@ export const JournalEntryComponent = (entry) => {
 	return `
         <li>
         <div id="entry--${entry.id}" class="journalEntry">
-            <h1>${entry.concept}</h1>
+            <h4>${entry.concept}</h4>
             <p>${entry.entry}</p>
             <p>${entry.date}</p>
         </div>
