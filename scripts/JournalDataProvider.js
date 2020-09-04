@@ -7,6 +7,8 @@
  */
 
 // This is the original data.
+const journalFromAPI = [];
+
 const journal = [
 	{
 		id: 1,
@@ -44,4 +46,18 @@ export const useJournalEntries = () => {
 			Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
 	);
 	return sortedByDate;
+};
+
+// Here we are going to create a getEntries function to get the entries off a local JSON server.
+
+export const getEntries = () => {
+	return fetch('http://localhost:8088/entries')
+		.then((Response) => Response.json())
+		.then((parsedEntries) => {
+			journalFromAPI = parsedEntries;
+		});
+};
+
+export const useEntries = () => {
+	return journalFromAPI.slice();
 };
