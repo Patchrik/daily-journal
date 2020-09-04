@@ -62,6 +62,4 @@ export const getEntries = () => {
 		});
 };
 
-export const useEntries = () => {
-	return journalFromAPI.slice();
-};
+export const useEntries = () => journalFromAPI.slice();

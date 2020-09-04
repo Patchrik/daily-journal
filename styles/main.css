@@ -36,6 +36,8 @@ aside {
 	height: 95%;
 	flex-basis: 25%;
 	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
 }
 
 .logo-holder {
@@ -60,4 +62,8 @@ aside {
 
 #entryLog {
 	border: 2px dashed coral;
+}
+
+.journalEntry {
+	border: dashed 1px red;
 }

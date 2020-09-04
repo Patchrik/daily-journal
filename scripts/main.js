@@ -6,9 +6,12 @@ import {
 import { JournalEntryComponent } from './JournalEntry.js';
 import { EntryListComponent } from './JournalEntryList.js';
 let testArray = [];
-EntryListComponent();
-getEntries().then((_) => {
-	testArray = useEntries();
-});
+getEntries()
+	.then((_) => {
+		testArray = useEntries();
+	})
+	.then((_) => {
+		EntryListComponent(testArray);
+	});
 
 console.log(testArray);
