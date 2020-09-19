@@ -63,3 +63,13 @@ export const getEntries = () => {
 };
 
 export const useEntries = () => journalFromAPI.slice();
+
+export const saveEntries = (entry) => {
+	return fetch('http://localhost:8088/entries', {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify(entry),
+	});
+	// .then we want to update our aside bar
+	// .then dispatch an event that says we need to re-render the aside
+};

@@ -5,6 +5,8 @@ import {
 } from './JournalDataProvider.js';
 import { JournalEntryComponent } from './JournalEntry.js';
 import { EntryListComponent } from './JournalEntryList.js';
+import { JournalFormComponent } from './JournalForm.js';
+JournalFormComponent();
 let testArray = [];
 getEntries()
 	.then((_) => {
