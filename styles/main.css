@@ -51,16 +51,21 @@ aside {
 
 .MainFieldContainer {
   align-self: flex-start;
-  height: 95%;
-  flex-basis: 90%;
+  height: auto;
+  flex-basis: auto;
   display: flex;
   flex-direction: column;
+  border-radius: 1px;
+  box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.95);
+  margin: 1em;
+  padding: 1em;
 }
 
 .journalEntry {
   width: auto;
   height: auto;
   border-radius: 1px;
-  box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.75);
-  margin: 0 auto;
+  box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.95);
+  margin: 1em;
+  padding: 1em;
 }

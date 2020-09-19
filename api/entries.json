@@ -27,6 +27,13 @@
       "entry": "Today I worked on saving notes/journal entries to my local JSON by using fetch POST method.\nAnd also used some logic to make sure that we don't get dirty data! ",
       "moodId": 1,
       "id": 4
+    },
+    {
+      "date": "2020-09-19",
+      "concept": "Databases Primary Keys - Foreign Keys",
+      "entry": "We're learning how to use Ids for databases to access both DBs.",
+      "moodId": "4",
+      "id": 5
     }
   ],
   "moods": [

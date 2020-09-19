@@ -1,42 +1,42 @@
 // This will be the event to capture the journal entry data in a custom event
 
-import { saveEntries } from './JournalDataProvider.js';
+import { saveEntries } from "./JournalDataProvider.js";
 
-const eventHub = document.querySelector('.formAreaWrapper');
+const eventHub = document.querySelector(".formAreaWrapper");
 
-eventHub.addEventListener('click', (clickEvent) => {
-	if (clickEvent.target.id.startsWith('record')) {
-		const savedEntryTextFromDom = document.querySelector('#journalEntry').value;
-		const savedConceptFromDom = document.querySelector('#journalConcept').value;
-		const savedMoodFromDom = document.querySelector('#journalMood').value;
-		const savedDateFromDom = document.querySelector('#journalDate').value;
-		if (savedEntryTextFromDom === '') {
-			// alert the users to enter text in the journal field
-			alert('Please place text in the journal field');
-		} else if (savedConceptFromDom === '') {
-			// alert the user to enter a concept in the field
-			alert('Please enter a concept in the journal concept field');
-		} else if (savedMoodFromDom === '') {
-			// alert the user to enter a mood in the field
-			alert('Please enter a mood');
-		} else if (savedDateFromDom === '') {
-			alert('Please select a date');
-		} else {
-			const newEntry = {
-				date: savedDateFromDom,
-				concept: savedConceptFromDom,
-				entry: savedEntryTextFromDom,
-				mood: savedMoodFromDom,
-			};
-			saveEntries(newEntry);
-		}
-	}
+eventHub.addEventListener("click", (clickEvent) => {
+  if (clickEvent.target.id.startsWith("record")) {
+    const savedEntryTextFromDom = document.querySelector("#journalEntry").value;
+    const savedConceptFromDom = document.querySelector("#journalConcept").value;
+    const savedMoodFromDom = document.querySelector("#journalMood").value;
+    const savedDateFromDom = document.querySelector("#journalDate").value;
+    if (savedEntryTextFromDom === "") {
+      // alert the users to enter text in the journal field
+      alert("Please place text in the journal field");
+    } else if (savedConceptFromDom === "") {
+      // alert the user to enter a concept in the field
+      alert("Please enter a concept in the journal concept field");
+    } else if (savedMoodFromDom === "") {
+      // alert the user to enter a mood in the field
+      alert("Please enter a mood");
+    } else if (savedDateFromDom === "") {
+      alert("Please select a date");
+    } else {
+      const newEntry = {
+        date: savedDateFromDom,
+        concept: savedConceptFromDom,
+        entry: savedEntryTextFromDom,
+        moodId: savedMoodFromDom,
+      };
+      saveEntries(newEntry);
+    }
+  }
 });
 
-const mainFormTarget = document.querySelector('.formAreaWrapper');
+const mainFormTarget = document.querySelector(".formAreaWrapper");
 
 export const JournalFormComponent = () => {
-	mainFormTarget.innerHTML = `<fieldset class="MainFieldContainer">
+  mainFormTarget.innerHTML = `<div class="MainFieldContainer">
 					<!-- Here is the text field that we will type in -->
 					<label for="journalEntry">Journal Entry</label>
 					<textarea
