@@ -55,11 +55,15 @@ export const JournalFormComponent = () => {
 						<!-- This will track your mood when you submitted the journal -->
 						<label for="journalMood">Mood</label>
 						<select name="journalMood" id="journalMood">
-							<option value="Sad">Sad</option>
-							<option value="Mad">Mad</option>
-							<option value="Stressed">Stressed</option>
-							<option value="Happy">Happy</option>
-							<option value="Excited">Excited</option>
+							<option value="1">Happy</option>
+							<option value="2">Sad</option>
+							<option value="3">Mad</option>
+							<option value="4">Excited</option>
+							<option value="5">Frustrated</option>
+							<option value="6">Afraid</option>
+							<option value="7">Stressed</option>
+							<option value="8">Okay</option>
+							
 						</select>
 						<!-- this is the button for submitting the journal -->
 						<input id="recordEntry" type="button" value="Record Journal Entry" onclick="click" />

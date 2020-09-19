@@ -1,42 +1,66 @@
 {
-	"entries": [
-		{
-			"id": 1,
-			"date": "07/24/2025",
-			"concept": "HTML & CSS",
-			"entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-			"moodId": 8
-		},
-		{
-			"id": 2,
-			"date": "07/26/2025",
-			"concept": "HTML & JS",
-			"entry": "We talked about using javascript to automate making some html elements. Very uncomfortable with the concepts",
-			"moodId": 7
-		},
-		{
-			"id": 3,
-			"date": "07/27/2025",
-			"concept": "JS & Lab time",
-			"entry": "Worked on the Journal to style it the way that I wanted, and then went and did some of the journal styling.",
-			"moodId": 7
-		},
-		{
-			"date": "2020-09-16",
-			"concept": "fetch POST and saving to API",
-			"entry": "Today I worked on saving notes/journal entries to my local JSON by using fetch POST method.\nAnd also used some logic to make sure that we don't get dirty data! ",
-			"moodId": 1,
-			"id": 4
-		}
-	],
-	"moods": [
-		{ "id": 1, "mood": "Happy" },
-		{ "id": 2, "mood": "Sad" },
-		{ "id": 3, "mood": "Mad" },
-		{ "id": 4, "mood": "Excited" },
-		{ "id": 5, "mood": "Frustrated" },
-		{ "id": 6, "mood": "Afraid" },
-		{ "id": 7, "mood": "Stressed" },
-		{ "id": 8, "mood": "Okay" }
-	]
+  "entries": [
+    {
+      "id": 1,
+      "date": "07/24/2025",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "moodId": 8
+    },
+    {
+      "id": 2,
+      "date": "07/26/2025",
+      "concept": "HTML & JS",
+      "entry": "We talked about using javascript to automate making some html elements. Very uncomfortable with the concepts",
+      "moodId": 7
+    },
+    {
+      "id": 3,
+      "date": "07/27/2025",
+      "concept": "JS & Lab time",
+      "entry": "Worked on the Journal to style it the way that I wanted, and then went and did some of the journal styling.",
+      "moodId": 7
+    },
+    {
+      "date": "2020-09-16",
+      "concept": "fetch POST and saving to API",
+      "entry": "Today I worked on saving notes/journal entries to my local JSON by using fetch POST method.\nAnd also used some logic to make sure that we don't get dirty data! ",
+      "moodId": 1,
+      "id": 4
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "mood": "Happy"
+    },
+    {
+      "id": 2,
+      "mood": "Sad"
+    },
+    {
+      "id": 3,
+      "mood": "Mad"
+    },
+    {
+      "id": 4,
+      "mood": "Excited"
+    },
+    {
+      "id": 5,
+      "mood": "Frustrated"
+    },
+    {
+      "id": 6,
+      "mood": "Afraid"
+    },
+    {
+      "id": 7,
+      "mood": "Stressed"
+    },
+    {
+      "id": 8,
+      "mood": "Okay"
+    }
+  ]
 }

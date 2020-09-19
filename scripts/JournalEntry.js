@@ -3,12 +3,17 @@
  *           HTML representation of the data
  */
 export const JournalEntryComponent = (entry) => {
+    let entryIdMood 
+    if (parseInt(entry.mood.id) === parseInt(entry.moodId)) {
+        entryIdMood = entry.mood.mood
+    }
 	return `
         <li>
         <div id="entry--${entry.id}" class="journalEntry">
-            <h4>${entry.concept}</h4>
+            <h4>Title: ${entry.concept}</h4>
             <p>${entry.entry}</p>
-            <p>${entry.date}</p>
+            <p>Date Written: ${entry.date}</p>
+            <p>Mood: ${entryIdMood}</p>
         </div>
         </li>
     `;

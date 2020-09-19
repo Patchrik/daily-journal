@@ -1,70 +1,66 @@
 body {
-	border: dashed red 2px;
-	padding: 10px;
+  padding: 10px;
 }
 
 header {
-	border: dashed lightseagreen 2px;
-	padding: 10px;
-	margin: 10px;
-	display: flex;
-	justify-content: flex-start;
-	flex-direction: row;
-	width: 95%;
-	height: 100px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 95%;
+  height: 100px;
 }
 
 #logo-img {
-	height: 100px;
-	width: auto;
+  height: 100px;
+  width: auto;
 }
 
 main {
-	border: dashed blue 2px;
-	height: 700px;
-	width: 96%;
-	margin: auto;
-	display: flex;
-	padding: 7px;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
+  height: 700px;
+  width: 96%;
+  margin: auto;
+  display: flex;
+  padding: 7px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
 footer {
-	border: dashed red 2px;
-	padding: 10px;
-	margin: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 aside {
-	border: dashed green 2px;
-	padding: 3px;
-	margin: 3px;
-	height: 98%;
-	flex-basis: 25%;
-	align-self: flex-end;
-	display: flex;
-	flex-direction: column;
+  padding: 3px;
+  margin: 3px;
+  height: 98%;
+  flex-basis: 25%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-holder {
-	order: 0;
-	margin: 5px;
-	align-self: flex-start;
-	flex-basis: 20%;
+  order: 0;
+  margin: 5px;
+  align-self: flex-start;
+  flex-basis: 20%;
 }
 
 .MainFieldContainer {
-	border: dashed 2px rebeccapurple;
-	align-self: flex-start;
-	height: 95%;
-	flex-basis: 90%;
-	display: flex;
-	flex-direction: column;
+  align-self: flex-start;
+  height: 95%;
+  flex-basis: 90%;
+  display: flex;
+  flex-direction: column;
 }
 
 .journalEntry {
-	border: dashed 1px red;
-	width: auto;
-	height: auto;
+  width: auto;
+  height: auto;
+  border-radius: 1px;
+  box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
 }

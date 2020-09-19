@@ -9,32 +9,32 @@
 // This is the original data.
 let journalFromAPI = [];
 
-const journal = [
-	{
-		id: 1,
-		date: '07/24/2025',
-		concept: 'HTML & CSS',
-		entry:
-			'We talked about HTML components and how to make grid layouts with Flexbox in CSS.',
-		mood: 'Ok',
-	},
-	{
-		id: 2,
-		date: '07/26/2025',
-		concept: 'HTML & JS',
-		entry:
-			'We talked about using javascript to automate making some html elements. Very uncomfortable with the concepts',
-		mood: 'Stressed',
-	},
-	{
-		id: 3,
-		date: '07/27/2025',
-		concept: 'JS & Lab time',
-		entry:
-			'Worked on the Journal to style it the way that I wanted, and then went and did some of the journal styling.',
-		mood: 'Stressed',
-	},
-];
+// const journal = [
+// 	{
+// 		id: 1,
+// 		date: '07/24/2025',
+// 		concept: 'HTML & CSS',
+// 		entry:
+// 			'We talked about HTML components and how to make grid layouts with Flexbox in CSS.',
+// 		mood: 'Ok',
+// 	},
+// 	{
+// 		id: 2,
+// 		date: '07/26/2025',
+// 		concept: 'HTML & JS',
+// 		entry:
+// 			'We talked about using javascript to automate making some html elements. Very uncomfortable with the concepts',
+// 		mood: 'Stressed',
+// 	},
+// 	{
+// 		id: 3,
+// 		date: '07/27/2025',
+// 		concept: 'JS & Lab time',
+// 		entry:
+// 			'Worked on the Journal to style it the way that I wanted, and then went and did some of the journal styling.',
+// 		mood: 'Stressed',
+// 	},
+// ];
 
 /*
     You export a function that provides a version of the
@@ -51,7 +51,7 @@ export const useJournalEntries = () => {
 // Here we are going to create a getEntries function to get the entries off a local JSON server.
 
 export const getEntries = () => {
-	return fetch('http://localhost:8088/entries')
+	return fetch('http://localhost:8088/entries?_expand=mood')
 		.then((Response) => Response.json())
 		.then((parsedEntries) => {
 			console.table(parsedEntries);
