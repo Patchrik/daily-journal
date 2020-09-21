@@ -1,6 +1,7 @@
 // This will be the event to capture the journal entry data in a custom event
 
-import { saveEntries } from "./JournalDataProvider.js";
+import { getEntries, saveEntries, useEntries } from "./JournalDataProvider.js";
+import { EntryListComponent } from "./JournalEntryList.js";
 
 const eventHub = document.querySelector(".formAreaWrapper");
 
@@ -28,7 +29,13 @@ eventHub.addEventListener("click", (clickEvent) => {
         entry: savedEntryTextFromDom,
         moodId: savedMoodFromDom,
       };
-      saveEntries(newEntry);
+      saveEntries(newEntry)
+        .then(getEntries)
+        .then(JournalFormComponent)
+        .then((_) => {
+          let updatedEntries = useEntries();
+          EntryListComponent(updatedEntries);
+        });
     }
   }
 });
