@@ -73,3 +73,9 @@ export const saveEntries = (entry) => {
 	// .then we want to update our aside bar
 	// .then dispatch an event that says we need to re-render the aside
 };
+
+export const deleteEntry = (entryId) => {
+	return fetch(`http://localhost:8088/entries/${entryId}`, {
+		method: 'DELETE',
+	}).then(getEntries);
+};
