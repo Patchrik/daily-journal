@@ -11,6 +11,7 @@ import { JournalEntryComponent } from './JournalEntry.js';
 const entryLog = document.querySelector('.ul--previousEntries');
 
 export const EntryListComponent = (entries) => {
+	entryLog.innerHTML = ``;
 	// Use the journal entry data from the data provider component
 	for (const entry of entries) {
 		/*

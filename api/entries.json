@@ -48,6 +48,13 @@
       "entry": "I'm messing with how I need to set up my Live Server so that I can fix buttons that make changes to files.",
       "moodId": "1",
       "id": 7
+    },
+    {
+      "date": "2020-09-21",
+      "concept": "Delete!",
+      "entry": "I finally got my delete button to work the way I wanted it to work. Yippee!",
+      "moodId": "1",
+      "id": 8
     }
   ],
   "moods": [
